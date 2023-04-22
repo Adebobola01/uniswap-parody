@@ -1,0 +1,5 @@
+connectbtn-background = rgba(76, 130, 251, 0.24);
+connectbtn-color = rgb(76, 130, 251)
+
+hobackground = linear-gradient(rgb(32, 39, 56) 0%, rgb(7, 8, 22) 10
+swapinput = rgb(19, 26, 42);
