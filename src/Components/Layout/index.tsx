@@ -1,14 +1,12 @@
 import React from "react";
 import "./Layout.scss";
-import Logo from "../Logo";
+import Navbar from "../Navbar";
+
+
 const Layout = () => {
 
     return (
-        <nav className="Nav">
-            <div>
-                <Logo/>
-            </div>
-        </nav>
+        <Navbar/>
     )
 }
 
