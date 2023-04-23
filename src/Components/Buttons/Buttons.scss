@@ -5,11 +5,23 @@
   border: none;
   border-radius: 1000px;
   padding: 1rem 1.2rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 600;
   cursor: pointer;
+  //   flex-grow: 2;
 
   &:hover {
     opacity: 0.8;
+  }
+}
+
+.dots {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    background-color: #98a1c02c;
+    border-radius: 1rem;
   }
 }
