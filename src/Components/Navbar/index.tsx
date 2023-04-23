@@ -9,7 +9,7 @@ const Navbar = (prop: any) => {
     return (
         <div className="navbar">
                 <Logo />
-            <nav>
+            <nav className="nav" >
                 <NavigationItem link='/link' >Swap</NavigationItem>
                 <NavigationItem link='/tokens' >Tokens</NavigationItem>
                 <NavigationItem link='/nfts' >Nfts</NavigationItem>

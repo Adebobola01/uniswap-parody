@@ -1,0 +1,20 @@
+.active {
+}
+
+.navigationItem {
+  padding: 0.8rem 1.4rem;
+  text-decoration: none;
+  color: #98a1c0;
+  font-weight: 500;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  //   align-items: center;
+  justify-content: center;
+  //   background-color: rebeccapurple;
+
+  &:hover {
+    background-color: #98a1c02c;
+  }
+}

@@ -1,15 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./NavigationItem.scss";
 
-
-type navProp = {
-    link: any,
-    children: React.ReactElement
-}
 
 const NavigationItem = (props: any) => {
     return (
-        <NavLink to={props.link}>{ props.children}</NavLink>
+        <NavLink to={props.link} className="navigationItem" >
+            {props.children}
+        </NavLink>
     )
 }
 
