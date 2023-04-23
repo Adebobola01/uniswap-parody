@@ -1,16 +1,19 @@
 import React, { Suspense, lazy } from 'react';
-// import { Routes } from "react-router-dom";
+import { useRoutes } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
+import Layout from './Components/Layout';
 
 function App() {
-  return (
-    <div className="App">
-      <Suspense fallback={"loader"} >
-          
-      </Suspense>
-    </div>
-  );
+  
+  let element = useRoutes([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [],
+    },
+  ]);
+  return element;
 }
 
 export default App;

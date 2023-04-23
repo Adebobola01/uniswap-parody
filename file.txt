@@ -3,3 +3,12 @@ connectbtn-color = rgb(76, 130, 251)
 
 hobackground = linear-gradient(rgb(32, 39, 56) 0%, rgb(7, 8, 22) 10
 swapinput = rgb(19, 26, 42);
+
+navbar-color= rgb(13, 17, 28)
+
+linear-gradient(rgba(8, 10, 24, 0) 0%, rgb(8, 10, 24) 45%);
+
+footer= linear-gradient(179.82deg, rgba(0, 0, 0, 0) 0.16%, rgb(5, 0, 38) 99.85%);
+
+coponent =right center / auto 100% no-repeat border-box rgb(13, 17, 28);
+large coponent = url(./static/media/nftCard.ec17cbfb.png) right center / auto 100% no-repeat border-box rgb(19, 26, 42);
