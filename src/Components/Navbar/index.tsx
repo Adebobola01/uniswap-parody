@@ -3,7 +3,7 @@ import "./Navbar.scss";
 import Logo from "../Logo";
 import NavigationItem from "../Navigation/NavigationItem";
 import ThreeDots from "../Buttons/3dots";
-
+import ConnectBtn from "../Buttons/connectBtn";
 const Navbar = (prop: any) => {
     
     return (
@@ -15,6 +15,7 @@ const Navbar = (prop: any) => {
                 <NavigationItem link='/nfts' >Nfts</NavigationItem>
                 <ThreeDots/>
             </nav>
+            <ConnectBtn/>
         </div>
     )
 }

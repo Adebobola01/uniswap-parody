@@ -1,0 +1,15 @@
+.connectBtn {
+  background-color: rgba(76, 130, 251, 0.24);
+  color: rgb(76, 130, 251);
+  outline: none;
+  border: none;
+  border-radius: 1000px;
+  padding: 1rem 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
