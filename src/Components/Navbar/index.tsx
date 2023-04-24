@@ -11,7 +11,7 @@ const Navbar = (prop: any) => {
         <div className="navbar">
             <nav className="nav" >
                 <Logo />
-                <NavigationItem link='/link' >Swap</NavigationItem>
+                <NavigationItem link='/swap' >Swap</NavigationItem>
                 <NavigationItem link='/tokens' >Tokens</NavigationItem>
                 <NavigationItem link='/nfts' >NFTs</NavigationItem>
                 <ThreeDots/>

@@ -10,7 +10,12 @@ function App() {
     {
       path: "/",
       element: <Layout />,
-      children: [],
+      children: [
+        {
+          path: "swap",
+          element: <Layout/>,
+        }
+      ],
     },
   ]);
   return element;
