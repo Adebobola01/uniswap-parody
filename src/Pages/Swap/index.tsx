@@ -9,3 +9,5 @@ const SwapPage = (props: any) => {
         <Swap/>
     )
 }
+
+export default SwapPage;

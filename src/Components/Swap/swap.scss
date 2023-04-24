@@ -1,0 +1,38 @@
+.swap {
+  color: white;
+
+  &-container {
+    color: white;
+    height: 40rem;
+    width: 40rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(152, 161, 192, 0.24);
+    border-radius: 1.6rem;
+    padding: 0.8rem;
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      width: 10rem;
+      span {
+        font-size: 16px;
+        font-weight: 600;
+        font-family: "inter custom", sans-serif;
+        line-height: normal;
+
+        &:not(:first-of-type) {
+          color: rgb(152, 161, 192);
+        }
+      }
+    }
+  }
+}
