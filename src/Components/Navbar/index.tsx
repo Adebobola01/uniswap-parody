@@ -13,7 +13,9 @@ const Navbar = (prop: any) => {
                 <Logo />
                 <NavigationItem link='/swap' >Swap</NavigationItem>
                 <NavigationItem link='/tokens' >Tokens</NavigationItem>
-                <NavigationItem link='/nfts' >NFTs</NavigationItem>
+                <NavigationItem link='/nfts'>NFTs</NavigationItem>
+                <NavigationItem link='/pools'>Pools</NavigationItem>
+
                 <ThreeDots/>
             </nav>
             <Search/>

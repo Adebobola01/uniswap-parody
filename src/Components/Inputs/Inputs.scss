@@ -43,3 +43,65 @@
     height: 20px;
   }
 }
+
+.swap-input {
+  &__container {
+    width: 45rem;
+    display: flex;
+    padding: 16px 16px 36px;
+    background-color: rgb(19, 26, 42);
+    border-radius: 12px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 0.5rem;
+    }
+
+    input {
+      // background-color: ;
+      line-height: 4.4rem;
+      color: white;
+      font-size: 4rem;
+      // height: 100%;
+      width: 100%;
+      background-color: transparent;
+      outline: none;
+      border: none;
+
+      &::placeholder {
+        color: rgb(152, 161, 192);
+      }
+      &::-webkit-scrollbar-button {
+        display: none;
+      }
+    }
+  }
+
+  &__btn {
+    // background-color: rgb(41, 50, 73);
+    border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+    button {
+      padding: 4px 8px 4px 4px;
+      cursor: pointer;
+      background-color: rgb(41, 50, 73);
+      outline: none;
+      border: none;
+      border-radius: 1.6rem;
+      display: flex;
+      align-items: center;
+      img {
+        width: 2.4rem;
+      }
+      span {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0 0.25rem;
+        color: white;
+      }
+      svg {
+        margin: 0 4px 0 8px;
+      }
+    }
+  }
+}

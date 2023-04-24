@@ -1,5 +1,6 @@
 import React from "react";
 import Settings from "../Buttons/settings";
+import SwapInput from "../Inputs/swap";
 import "./swap.scss";
 
 const Swap = (props: any) => {
@@ -13,6 +14,11 @@ const Swap = (props: any) => {
                 </div>
                 <Settings/>
             </div>
+            <div className="swap-inputs">
+                <SwapInput/>
+                <SwapInput/>
+            </div>
+            <button className="swap-btn">Connect Wallet</button>
         </div>
     )
 }
