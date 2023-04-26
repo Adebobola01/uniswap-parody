@@ -1,6 +1,7 @@
 import React from "react";
 import "./tokens.scss";
 import TokenInput from "../Inputs/tokens";
+import PopTokens from "../PopTokens";
 
 const Token = (props: any) => {
 
@@ -11,8 +12,16 @@ const Token = (props: any) => {
                     <span>Select a token</span>
                     <span>X</span>
                 </div>
-                <div>
                     <TokenInput/>
+                <div className="popular-tokens" >
+                    <PopTokens sym="ETH" />
+                    <PopTokens sym="ETH" />
+                    <PopTokens sym="ETH" />
+                    <PopTokens sym="ETH" />
+                    <PopTokens sym="ETH" />
+                    <PopTokens sym="ETH" />
+                    <PopTokens sym="ETH" />
+
                 </div>
             </div>
             <div className="tokens-body" >

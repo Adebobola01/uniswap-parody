@@ -166,7 +166,7 @@
 .tokens-input {
   &__container {
     border: 1px solid rgba(152, 161, 192, 0.24);
-    padding: 0.2rem 2rem;
+    padding: 0.2rem 16px;
     width: 100%;
     display: flex;
     border-radius: 10px;
@@ -186,6 +186,12 @@
       width: 100%;
       padding: 0;
       color: white;
+      font-size: 16px;
+
+      &::placeholder {
+        font-size: 16px;
+        color: #98a1c0;
+      }
     }
   }
 }

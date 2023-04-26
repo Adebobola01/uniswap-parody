@@ -1,0 +1,23 @@
+.popToken {
+  display: flex;
+  border: 1px solid rgba(152, 161, 192, 0.24);
+  padding: 6px 12px 6px 6px;
+  width: auto;
+  color: white;
+  align-items: center;
+  font-family: "inter custom", sans-serif;
+  font-size: 16px;
+  border-radius: 16px;
+  margin-right: 12px;
+
+  span {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+  }
+}
