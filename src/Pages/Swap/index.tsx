@@ -1,12 +1,15 @@
 import React from "react";
 import Swap from "../../Components/Swap";
-
+import Token from "../../Components/Tokens/tokens";
 
 
 const SwapPage = (props: any) => {
     
     return (
-        <Swap/>
+        <>
+            <Token/>
+            <Swap/>
+        </>
     )
 }
 

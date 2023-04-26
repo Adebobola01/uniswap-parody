@@ -31,6 +31,10 @@
       font-weight: 400;
       color: #98a1c0;
     }
+
+    &:is(:active, :hover) {
+      border: rgba(184, 192, 220, 0.24);
+    }
   }
 
   &-img {
@@ -53,6 +57,11 @@
     padding: 16px 16px 36px;
     background-color: rgb(19, 26, 42);
     border-radius: 12px;
+    border: 1px solid transparent;
+
+    // &:is(:hover) {
+    //   border: 1px solid rgba(184, 192, 220, 0.1);
+    // }
 
     &:not(:last-of-type) {
       margin-bottom: 0.5rem;
@@ -74,6 +83,14 @@
       }
       &::-webkit-scrollbar-button {
         display: none;
+      }
+
+      // &:active,
+      &:focus,
+      &:hover {
+        .swap-input__container {
+          border: 1px solid rgba(184, 192, 220) !important;
+        }
       }
     }
   }
@@ -120,7 +137,7 @@
       padding: 0 1rem;
       border-radius: 4rem;
       cursor: pointer;
-      height: 3.6rem;
+      height: 3.2rem;
 
       button {
         background-color: transparent;
@@ -137,9 +154,9 @@
 
       span {
         color: white;
-        font-weight: 500;
+        font-weight: 700;
         font-size: 2rem;
-        margin-right: 1rem;
+        margin-right: 2rem;
         white-space: nowrap;
       }
     }
