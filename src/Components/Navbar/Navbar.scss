@@ -12,4 +12,26 @@
 .nav {
   display: flex;
   align-items: center;
+
+  &-btns {
+    display: flex;
+    align-items: center;
+    &__select {
+      display: flex;
+      align-items: center;
+      margin-right: 2rem;
+      cursor: pointer;
+      height: 100%;
+      padding: 1rem;
+      border-radius: 8px;
+
+      &:hover {
+        background-color: rgba(153, 161, 189, 0.0784313725490196);
+      }
+      img {
+        height: 20px;
+        margin-right: 1rem;
+      }
+    }
+  }
 }
