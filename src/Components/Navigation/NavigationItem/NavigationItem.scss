@@ -19,3 +19,11 @@
     background-color: #98a1c02c;
   }
 }
+
+@media (max-width: 1279px) {
+  .navigationItem {
+    &:last-of-type {
+      display: none;
+    }
+  }
+}
