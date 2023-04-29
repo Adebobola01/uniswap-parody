@@ -6,10 +6,48 @@
     border-radius: 1.2rem;
     background-color: rgba(255, 255, 255, 0.07);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    min-height: 46px;
+    // height: 12rem;
+    z-index: 1000;
     width: 48rem;
-    margin-left: -20rem;
+    position: relative;
+
+    &:is(:focus-within, :active, :visited) {
+      background-color: #0d111c;
+      border-radius: 1.2rem 1.2rem 0 0;
+      border-bottom: none;
+
+      label.search-modal {
+        display: block;
+      }
+    }
+    // margin-top: 10%;
+    // gap: 2rem;
+  }
+
+  // margin-left: -20rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  // flex-grow: 1;
+  // margin-bottom: 2rem;
+  // height: 40px;
+  // background-color: #0d111c;
+
+  // &-box {
+  //   display: flex;
+  //   position: relative;
+  // }
+
+  &:is(:active, :focus, :focus-within) {
+    background-color: #0d111c;
+    border-radius: 1.2rem 1.2rem 0 0;
+    border-bottom: none;
+    // border-bottom: 0;
   }
 
   &-input {
@@ -30,10 +68,6 @@
       font-size: 1.8rem;
       font-weight: 400;
       color: #98a1c0;
-    }
-
-    &:is(:active, :hover) {
-      border: rgba(184, 192, 220, 0.24);
     }
   }
 
@@ -202,8 +236,8 @@
   .search {
     &-box {
       width: 36rem;
-      margin-left: -13rem;
     }
+    // margin-left: -13rem;
     &-input {
       margin-left: 0;
       &::placeholder {
@@ -216,8 +250,6 @@
 
 @media (max-width: 1099px) {
   .search {
-    &-box {
-      display: none;
-    }
+    display: none;
   }
 }
