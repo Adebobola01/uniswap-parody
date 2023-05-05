@@ -3,7 +3,7 @@ import { useRoutes } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 import Layout from './Components/Layout';
-import Hero from './Pages/Hero';
+import Home from './Pages/Home';
 import Swap from "./Pages/Swap";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       children: [
         {
           path: "/",
-          element: <Hero/>
+          element: <Home/>
         },
         {
           path: "swap",
