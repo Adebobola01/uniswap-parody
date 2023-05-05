@@ -14,6 +14,7 @@
     z-index: 1000;
     width: 48rem;
     position: relative;
+    margin-left: -20rem;
 
     &:is(:focus-within, :active, :visited) {
       background-color: #0d111c;
@@ -28,7 +29,6 @@
     // gap: 2rem;
   }
 
-  // margin-left: -20rem;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -236,8 +236,8 @@
   .search {
     &-box {
       width: 36rem;
+      margin-left: -13.2rem;
     }
-    // margin-left: -13rem;
     &-input {
       margin-left: 0;
       &::placeholder {
@@ -250,6 +250,8 @@
 
 @media (max-width: 1099px) {
   .search {
-    display: none;
+    &-box {
+      display: none;
+    }
   }
 }

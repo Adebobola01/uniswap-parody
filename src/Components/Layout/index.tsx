@@ -11,7 +11,7 @@ const Layout = () => {
         <>
             <Navbar />
             <main className="main" >
-                <SwapPage/>
+                {/* <SwapPage/> */}
                 <Outlet/>
             </main>
         </>
