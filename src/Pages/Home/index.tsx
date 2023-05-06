@@ -20,6 +20,13 @@ const Home = (props: any) => {
                     <SmallCard />
                     <SmallCard/>
                 </div>
+                <div className="home-powered">
+                    <div className="home-powered__texts">
+                        <p>Powered by the Uniswap Protocol</p>
+                        <span>The leading decentralized crypto trading protocol, governed by a global community.</span>
+                    </div>
+                    <a>Learn more</a>
+                </div>
             </section>
         </div>
     )
