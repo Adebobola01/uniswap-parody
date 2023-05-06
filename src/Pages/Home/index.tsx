@@ -17,6 +17,7 @@ const Home = (props: any) => {
                 </div>
                 <div className="home-smallcards">
                     <SmallCard />
+                    <SmallCard />
                     <SmallCard/>
                 </div>
             </section>
