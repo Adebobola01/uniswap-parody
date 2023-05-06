@@ -70,3 +70,12 @@
     }
   }
 }
+
+.hero-swap {
+  cursor: pointer;
+  opacity: 0.5;
+  &:hover {
+    transform: translate(-50%, calc(-50% - 4px));
+    border: 1px solid rgb(76, 130, 251);
+  }
+}

@@ -8,18 +8,26 @@
     // width: 100% !important;
     flex-direction: column;
     align-items: center;
-    padding-top: 13rem;
+    margin-top: 13rem;
     background-color: rgba(7, 8, 22, 0.6);
     justify-content: center;
     z-index: 4;
     // margin-right: 0;
     width: 720px;
-    div {
+
+    &--body-container {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
       background-color: rgb(7, 8, 22);
+    }
+    &--h1-container {
+      background: linear-gradient(
+        to bottom,
+        rgba(7, 8, 22, 0.1) 0%,
+        rgb(7, 8, 22) 100%
+      );
     }
 
     h1 {

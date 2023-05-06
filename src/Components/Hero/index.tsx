@@ -7,10 +7,14 @@ const Hero = (props: any) => {
     
     return (
         <div className="hero" >
-            <Swap style={{top: "40%"}} />
+            <a href="swap">
+                <Swap style={{ top: "40%" }} hero={true} />
+            </a>
             <div className="hero__texts" >
-                <h1>Trade Crypto and NFTs with confidence</h1>
-                <div>
+                <div className="hero__texts--h1-container">
+                    <h1>Trade Crypto and NFTs with confidence</h1>
+                </div>
+                <div className="hero__texts--body-container">
                     <p>Buy, sell, and explore tokens and NFTs</p>
                     <HeroBtn />
                     <span className="hero-more">

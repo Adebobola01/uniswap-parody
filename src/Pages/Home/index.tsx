@@ -9,6 +9,9 @@ const Home = (props: any) => {
     return (
         <div className="home">
             <Hero />
+            <main className="home-body">
+                
+            </main>
         </div>
     )
 }
