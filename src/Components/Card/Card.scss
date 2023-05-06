@@ -1,0 +1,58 @@
+.card {
+  padding: 2.4rem;
+  height: 36rem;
+  color: white;
+  width: 100%;
+  background: url(../../assets/images/swapCard.1a0376fd.png) right center / auto
+    100% no-repeat border-box rgb(19, 26, 42);
+  //   background-position: right center / auto 100%;
+  //   background-repeat: no-repeat;
+  border-radius: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+
+  &-header {
+    font-size: 2.8rem;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    span {
+      font-size: 2rem;
+    }
+
+    a {
+      color: rgb(76, 130, 251);
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.small-card {
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background: right center / auto 100% no-repeat border-box rgb(13, 17, 28);
+  border: 1px solid rgba(152, 161, 192, 0.24);
+  border-radius: 2.4rem;
+
+  &__header {
+    display: flex;
+    font-size: 2.8rem;
+    font-weight: 600;
+    display: flex;
+
+    p {
+      margin: 0;
+    }
+  }
+}

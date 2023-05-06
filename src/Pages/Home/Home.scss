@@ -7,5 +7,16 @@
       rgba(0, 0, 0, 0) 0.16%,
       rgb(5, 0, 38) 99.85%
     );
+    padding: 0 24px 5px;
+    border: 1px solid transparent;
+  }
+
+  &-bigcards {
+    display: flex;
+    gap: 3.2rem;
+  }
+
+  &-smallcards {
+    display: flex;
   }
 }

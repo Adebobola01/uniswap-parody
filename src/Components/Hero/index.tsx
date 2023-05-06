@@ -6,7 +6,7 @@ import HeroBtn from "../Buttons/heroBtn";
 const Hero = (props: any) => {
     
     return (
-        <div className="hero" >
+        <section className="hero" >
             <a href="swap">
                 <Swap style={{ top: "40%" }} hero={true} />
             </a>
@@ -23,7 +23,7 @@ const Hero = (props: any) => {
                     </span>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
