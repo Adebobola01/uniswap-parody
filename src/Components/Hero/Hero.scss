@@ -1,16 +1,42 @@
 .hero {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  z-index: 4;
-  margin-bottom: 8rem;
+  z-index: 400;
+  padding-bottom: 8rem;
   position: relative;
+  align-items: center;
+
+  &-background {
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    background: radial-gradient(rgb(223, 46, 184) 10%, rgba(0, 0, 0, 0) 75%);
+    top: -7rem;
+    z-index: 1 !important;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  &-top {
+    height: 11rem;
+    background-color: rgba(7, 8, 22, 0.6);
+    width: 100%;
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 2;
+  }
+
   &__texts {
     display: flex;
-    // width: 100% !important;
     flex-direction: column;
     align-items: center;
-    margin-top: 13rem;
+    // padding-top: 8rem;
+    // margin-top: 5rem;
+    // margin-top: 11rem;
     background-color: rgba(7, 8, 22, 0.6);
     justify-content: center;
     z-index: 4;
@@ -23,13 +49,15 @@
       align-items: center;
       width: 100%;
       background-color: rgb(7, 8, 22);
+      z-index: 5;
     }
     &--h1-container {
       background: linear-gradient(
         to bottom,
-        rgba(7, 8, 22, 0.1) 0%,
-        rgb(7, 8, 22) 100%
+        rgba(7, 8, 22, 0) 0%,
+        rgb(7, 8, 22) 60%
       );
+      z-index: 5;
     }
 
     h1 {
