@@ -19,7 +19,7 @@ const SwapPage = (props: any) => {
                 showTokens ? <Token close={toggleTokens} /> : null
             }
             <Swap click={toggleTokens} />
-            <SwapWidget width="460px"   />
+            {/* <SwapWidget width="460px"   /> */}
         </>
     )
 }

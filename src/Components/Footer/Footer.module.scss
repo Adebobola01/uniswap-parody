@@ -1,0 +1,63 @@
+.footer{
+    display: flex;
+    padding: 0 9.6rem 9.6rem;
+    justify-content: space-between;
+    background-color: rgb(5, 0, 38);
+
+    &_copy{
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 7.2rem;
+            height: 7.2rem;
+        }
+
+        span{
+            margin-top: 2rem;
+            color: rgb(93, 103, 133);
+            font-size: 1.6rem;
+        }
+    }
+    
+    &_socials{
+        margin-top: 2rem;
+        display: flex;
+        gap: 2rem;
+        // height: 8rem;
+        a{
+            width: 3.2rem;
+            height: 3.2rem;
+
+            svg{
+                fill: rgb(152, 161, 192);
+            }
+        }
+    }
+
+    &_nav{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        width: 50rem;
+        justify-content: flex-end;
+
+        div{
+            width: 20rem;
+            display: flex;
+            flex-direction: column;
+            font-size: 1.6rem;
+            gap: 1.2rem;
+
+            h2{
+                color: #fff;
+                font-size: inherit;
+                margin: 0;   
+            }
+
+            a{
+                color: rgb(152, 161, 192);
+                font-size: inherit;
+            }
+        }
+    }
+}

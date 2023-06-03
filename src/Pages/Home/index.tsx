@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.scss";
 import Hero from "../../Components/Hero"
 import {BigCard, SmallCard} from "../../Components/Card";
+import Footer from "../../Components/Footer";
 
 const Home = (props: any) => {
 
@@ -28,6 +29,7 @@ const Home = (props: any) => {
                     <a>Learn more</a>
                 </div>
             </section>
+            <Footer/>
         </div>
     )
 }
