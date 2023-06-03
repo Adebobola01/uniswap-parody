@@ -10,11 +10,11 @@ const Hero = (props: any) => {
             {/* <div className="hero-background">
             </div> */}
             <div className="hero-top">
+                <a href="swap">
+                    <Swap style={{ top: "6.8rem" }} hero={true} />
+                </a>
             </div>
             <div className="hero__texts" >
-                <a href="swap">
-                    <Swap style={{ top: "20%" }} hero={true} />
-                </a>
                 <div className="hero__texts--h1-container">
                     <h1>Trade Crypto and NFTs with confidence</h1>
                 </div>

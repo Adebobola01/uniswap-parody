@@ -3,6 +3,10 @@ import "./Home.scss";
 import Hero from "../../Components/Hero"
 import {BigCard, SmallCard} from "../../Components/Card";
 import Footer from "../../Components/Footer";
+import cardImg1 from "../../assets/images/card1.png";
+import cardImg2 from "../../assets/images/card2.png";
+import cardImg3 from "../../assets/images/card3.png";
+
 
 const Home = (props: any) => {
 
@@ -13,13 +17,14 @@ const Home = (props: any) => {
             <Hero />
             <section className="home-body">
                 <div className="home-bigcards">
-                    <BigCard />
-                    <BigCard/>
+                    <BigCard header="Swap tokens" body="Buy, sell, and explore tokens on Ethereum, Polygon, Optimism, and more." link="" linkText="Trade Tokens" />
+                    <BigCard header="Trade NFTs" body="Buy and sell NFTs across marketplaces to find more listings at better prices." link="" linkText="Explore NFTs" card2={true} />
                 </div>
                 <div className="home-smallcards">
-                    <SmallCard />
-                    <SmallCard />
-                    <SmallCard/>
+                    <SmallCard title="Buy crypto" text="Buy crypto with your credit card or bank account at the best rates." linkTitle="Buy now" image={ cardImg1} />
+                    <SmallCard title="Earn" text="Provide liquidity to pools on Uniswap and earn fees on swaps." linkTitle="Buy now" image={ cardImg2} />
+                    <SmallCard title="Build dApps" text="Build apps and tools on the largest DeFi protocol on Ethereum." linkTitle="Developer docs" image={ cardImg3} />
+
                 </div>
                 <div className="home-powered">
                     <div className="home-powered__texts">

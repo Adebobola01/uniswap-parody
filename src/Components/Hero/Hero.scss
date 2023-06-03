@@ -22,14 +22,16 @@
     align-items: baseline;
   }
   &-top {
-    height: 11rem;
+    // height: 50rem;
     background-color: rgba(7, 8, 22, 0.6);
-    width: 100%;
-    display: flex;
+    width: 55rem;
+    position: sticky;
     // flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
     z-index: 2;
+
+    a{
+      z-index: 50;
+    }
   }
 
   &__texts {
