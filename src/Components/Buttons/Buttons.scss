@@ -44,3 +44,10 @@
     box-shadow: rgb(255, 0, 199) 0px 0px 16px 0px;
   }
 }
+
+
+@media (max-width: 640px) {
+  .dots{
+    display: none;
+  }
+}

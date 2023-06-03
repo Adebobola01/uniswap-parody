@@ -27,8 +27,7 @@
   &-top {
     // height: 50rem;
     background-color: rgba(7, 8, 22, 0.6);
-    width: 55rem;
-    position: sticky;
+    position: relative;
     background-color: black;
     // flex-direction: column;
     // z-index: 100;
@@ -49,8 +48,9 @@
     justify-content: center;
     z-index: 4;
     // margin-right: 0;
-    width: 720px;
+    // width: 720px;
     // position: relative;
+    max-width: min(720px, 90%);
 
     &--body-container {
       display: flex;
@@ -80,6 +80,7 @@
         rgb(255, 87, 218) 100%
       );
       -webkit-background-clip: text;
+
     }
     p {
       color: rgb(93, 103, 133);
@@ -107,6 +108,31 @@
 
     &:hover {
       opacity: 0.6;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .hero{
+    &__texts{
+      h1{
+        font-size: 4.8rem;
+      }
+      &__body-container{
+        p{
+          font-size: 1.6rem;
+          max-width: 600px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .hero{
+    &__texts{
+      max-width: 100%;
     }
   }
 }

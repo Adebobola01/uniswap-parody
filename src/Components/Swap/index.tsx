@@ -6,7 +6,7 @@ import "./swap.scss";
 const Swap = (props: any) => {
     
     return (
-        <div className={`swap_back_container`} >
+        <div className={`swap_back_container ${props.hero ? "her-swap" : null}`} >
             <div className={`swap_back ${props.hero ? "hero-swap" : null}`} >
                 <div className={`swap-container`}>
                     <div className="swap-header" >

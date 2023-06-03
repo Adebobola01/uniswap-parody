@@ -45,7 +45,7 @@
   color: white;
   border: 1px solid rgba(152, 161, 192, 0.24);
   border-radius: 2.4rem;
-  // height: 26rem;
+  height: 26rem;
   background: right center / auto 100% no-repeat border-box rgb(13, 17, 28);
 
   &__header {
@@ -88,4 +88,10 @@
 
 .card2{
   background: url(../../assets/images/nftCard.ec17cbfb.png) right center / auto 100% no-repeat border-box rgb(13, 17, 28);
+}
+
+@media (max-width: 1023) {
+  .small-card{
+    width: 100%;
+  }
 }

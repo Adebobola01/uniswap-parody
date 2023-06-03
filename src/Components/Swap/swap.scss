@@ -1,6 +1,7 @@
 .swap {
   color: white;
   &_back{
+    width: auto;
     
     &_container{
       position: absolute;
@@ -10,6 +11,8 @@
       background-color: rgb(7, 8, 22);
       top: 13rem;
       z-index: 2;
+      display: flex;
+      align-items: flex-end;
     }
   }
 
@@ -91,15 +94,39 @@
   cursor: pointer;
   // opacity: 1;
   // background-color: rgb(13, 17, 28);
-  padding-bottom: 8rem;
-  width: 70rem;
-  height: 70rem;
+  // padding-bottom: 8rem;
+  width: min(70rem, 100vw);
+  height: min(70rem, 80vh);
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background: radial-gradient(#af1d8a75 0%, transparent 60%);
-  top: 10rem;
+  background: radial-gradient(#af1d8a80 0%, transparent 70%);
+  // top: 10rem;
   color: rgb(152, 161, 192);
   // transform: translate(-50% , 0);
   z-index: 0;
+}
+
+.her-swap{
+  top: 14rem;
+}
+
+
+@media (max-width: 640px) {
+  .navigationItem{
+    display: none;
+  }
+}
+
+
+@media (max-width: 540px) {
+  .swap{
+    &-container{
+      transform: scale(.7);
+    }
+  }
+
+  .hero-swap{
+    width: 32rem;
+  }
 }
