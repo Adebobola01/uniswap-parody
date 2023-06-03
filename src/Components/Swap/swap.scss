@@ -1,10 +1,16 @@
 .swap {
   color: white;
   &_back{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    
+    &_container{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgb(7, 8, 22);
+      top: 13rem;
+      z-index: 2;
+    }
   }
 
   &-container {
@@ -14,6 +20,13 @@
     border-radius: 1.6rem;
     padding: 0.8rem;
     z-index: 2;
+    transform: translateY(0);
+
+    &:hover {
+      transform: translateY(-4px);
+      border: 1px solid rgb(76, 130, 251);
+      // z-index: 10;
+    }
   }
 
   &-header {
@@ -84,14 +97,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background: radial-gradient(#af1d6b71 0%, transparent 60%);
-  top: -22rem;
+  background: radial-gradient(#af1d8a75 0%, transparent 60%);
+  top: 10rem;
   color: rgb(152, 161, 192);
-  transform: translate(-50% , 0);
+  // transform: translate(-50% , 0);
   z-index: 0;
-  &:hover {
-    transform: translate(-50%, calc(-4px));
-    border: 1px solid rgb(76, 130, 251);
-    // z-index: 10;
-  }
 }
