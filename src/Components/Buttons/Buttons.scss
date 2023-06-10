@@ -50,4 +50,13 @@
   .dots{
     display: none;
   }
+  .hero-cta{
+    padding: 1rem 9.7rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-cta{
+    padding: 1rem 7.2rem;
+  }
 }
