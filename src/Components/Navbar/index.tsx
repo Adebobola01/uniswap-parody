@@ -7,10 +7,10 @@ import ConnectBtn from "../Buttons/connectBtn";
 import Search from "../Inputs/search";
 import ethImg from "../../assets/images/ethLogo.png"
 import magnifierImg from "../../assets/images/search.svg"
-const Navbar = (prop: any) => {
+const Navbar = (props: any) => {
     
     return (
-        <div className="navbar">
+        <div className={`navbar ${props.changeColor ? "color" : null}`}>
             <nav className="nav" >
                 <Logo />
                 <NavigationItem link='/swap' >Swap</NavigationItem>

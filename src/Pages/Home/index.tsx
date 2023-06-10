@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
+import {useOutletContext} from "react-router-dom"
 import "./Home.scss";
 import Hero from "../../Components/Hero"
 import {BigCard, SmallCard} from "../../Components/Card";
@@ -9,13 +10,27 @@ import cardImg3 from "../../assets/images/card3.png";
 
 
 const Home = (props: any) => {
+    const domRef: any = useRef();
+    const [navBarHandler] = useOutletContext<any>();
 
-
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                console.log("intersecting")
+                if (e.isIntersecting) {                   
+                   return navBarHandler(true);
+                }
+                return navBarHandler(false)
+            })
+        });
+        observer.observe(domRef.current);
+        return () => observer.unobserve(domRef.current)
+    }, [])
 
     return (
         <div className="home">
             <Hero />
-            <section className="home-body">
+            <section ref={domRef} className="home-body">
                 <div className="home-bigcards">
                     <BigCard header="Swap tokens" body="Buy, sell, and explore tokens on Ethereum, Polygon, Optimism, and more." link="" linkText="Trade Tokens" />
                     <BigCard header="Trade NFTs" body="Buy and sell NFTs across marketplaces to find more listings at better prices." link="" linkText="Explore NFTs" card2={true} />
