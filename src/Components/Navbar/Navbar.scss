@@ -1,16 +1,19 @@
 .navbar {
+  display: flex;
   padding: 2rem 1.2rem;
   position: sticky;
   top: 0;
   //   height: 7.2rem;
   background-color: transparent;
-  display: flex;
   justify-content: space-between;
   // align-items: center;
   z-index: 5;
-
   //   box-sizing: border-box;
   height: 72px;
+}
+
+.mobile{
+  display: none !important;
 }
 
 .color{
@@ -62,5 +65,16 @@
         display: block;
       }
     }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .mobile{
+    display: flex !important;
+  }
+
+  .nav-btns__select{
+    display: none;
   }
 }

@@ -17,7 +17,11 @@ const Navbar = (props: any) => {
                 <NavigationItem link='/tokens' >Tokens</NavigationItem>
                 <NavigationItem link='/nfts'>NFTs</NavigationItem>
                 <NavigationItem link='/pools'>Pools</NavigationItem>
-                <ThreeDots/>
+                <ThreeDots />
+                <div className="nav-btns__select mobile">
+                    <img src={ethImg} alt="eth_logo" />
+                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.97168 1L6.20532 6L11.439 1" stroke="white"></path></svg>
+                </div>
             </nav>
             <Search/>
             <div className="nav-btns" >
