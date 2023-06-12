@@ -46,15 +46,12 @@
 }
 
 @media (max-width: 767px) {
-  .dots{
-    display: none;
-  }
+  // .dots{
+  //   display: none;
+  // }
 }
 
 @media (max-width: 640px) {
-  .dots{
-    display: none;
-  }
   .hero-cta{
     padding: 1rem 9.7rem;
   }

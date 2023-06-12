@@ -77,4 +77,15 @@
   .nav-btns__select{
     display: none;
   }
+
+  .nav{
+    & > a{
+        &:not(:first-of-type){
+            display: none;
+        }
+    }
+    .dots{
+        display: none;
+    }
+}
 }
