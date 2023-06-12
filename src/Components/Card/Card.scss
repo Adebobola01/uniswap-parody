@@ -90,8 +90,18 @@
   background: url(../../assets/images/nftCard.ec17cbfb.png) right center / auto 100% no-repeat border-box rgb(13, 17, 28);
 }
 
-@media (max-width: 1023) {
-  .small-card{
-    width: 100%;
+
+@media (max-width: 640px) {
+  .card{
+    height: 21rem;
+    font-weight: 500;
+
+    span{
+      font-size: 16px;
+      line-height: 20px;
+    }
+    a{
+      font-size: 16px;
+    }
   }
 }
