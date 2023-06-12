@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import "./Layout.scss";
 import Navbar from "../Navbar";
 import SwapPage from "../../Pages/Swap";
+import MobileNav from "../Navbar/Mobile";
 
 
 const Layout = () => {
@@ -28,6 +29,7 @@ const Layout = () => {
                 {/* <SwapPage/> */}
                 <Outlet context={[navBarHandler]} />
             </main>
+            <MobileNav/>
         </>
     )
 }
