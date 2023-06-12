@@ -58,6 +58,16 @@
   }
 }
 
+@media (max-width: 1279px) {
+  .nav{
+    & > a{
+      &:last-of-type {
+        display: none;
+      }
+    }
+  }
+}
+
 @media (max-width: 1099px) {
   .nav {
     &-btns {
