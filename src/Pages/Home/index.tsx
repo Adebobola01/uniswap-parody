@@ -24,7 +24,7 @@ const Home = (props: any) => {
             })
         });
         observer.observe(domRef.current);
-        return () => observer.unobserve(domRef.current)
+        // return () => {observer.unobserve(domRef.current)};
     }, [])
 
     return (

@@ -4,22 +4,22 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+// import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 
-const client = new ApolloClient({
-  uri: "https://api.spacex.land/graphql/",
-  cache: new InMemoryCache() 
-})
+// const client = new ApolloClient({
+//   uri: "https://api.spacex.land/graphql/",
+//   cache: new InMemoryCache() 
+// })
 
 root.render(
   <React.StrictMode>
-    <ApolloProvider client={client} >
+    {/* <ApolloProvider client={client} > */}
       <BrowserRouter>
       <App />
       </BrowserRouter>
-    </ApolloProvider>
+    {/* </ApolloProvider> */}
   </React.StrictMode>
 );
 
